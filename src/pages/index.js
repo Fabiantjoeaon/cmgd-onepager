@@ -16,9 +16,9 @@ const IndexPage = () => (
     <GlobalStyle />
     <Nav />
     <Hero />
+    <Team />
     <Journey />
     <Products />
-    <Team />
     <Contact />
   </div>
 )

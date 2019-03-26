@@ -98,7 +98,6 @@ video {
 }
 
 * { 
-  color: #fff;
 }
 
 
@@ -117,7 +116,6 @@ section {
 }
 
 h1, h2, h3, p, span, li, div {
-  color: #fff;
   font-family: "Poppins" !important;
 }
 
