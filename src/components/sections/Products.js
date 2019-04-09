@@ -5,6 +5,9 @@ import styled from "styled-components"
 import Header from "../layout/Header"
 import Section from "../layout/Section"
 
+// Images
+import image from "../../images/family-car.png"
+
 const Products = () => {
   return (
     <StyledProducts>
@@ -25,7 +28,9 @@ const Products = () => {
           future we might have travel advice based on other factors like the
           weather.
         </Left>
-        <Right>sadfas</Right>
+        <Right>
+          <img src={image} />
+        </Right>
       </Wrapper>
     </StyledProducts>
   )
@@ -37,6 +42,10 @@ const StyledProducts = styled(Section)``
 
 const Intro = styled.div`
   width: 40%;
+  font-size: 1.4rem;
+  margin: 15px 0;
+  line-height: 30px;
+  font-weight: 700;
 `
 
 const Wrapper = styled.div`
@@ -45,10 +54,12 @@ const Wrapper = styled.div`
 
 const Left = styled.div`
   flex: 1;
-  background-color: red;
+  line-height: 20px;
 `
 
 const Right = styled.div`
   flex: 1;
-  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
