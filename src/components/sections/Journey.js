@@ -129,7 +129,7 @@ const Journey = () => {
               feel that, the people feel it. Working on a prototype and
               delivering visuals to clarify our concept is our #1 priority.
             </p>
-          
+          </TimelineEvent>
         </Timeline>
       </TimelineWrapper>
     </StyledJourney>
