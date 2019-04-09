@@ -47,6 +47,7 @@ const StyledTeam = styled(Section)`
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 
   h1 {
     font-weight: 900;

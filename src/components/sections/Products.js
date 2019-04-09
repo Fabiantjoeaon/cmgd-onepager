@@ -79,6 +79,7 @@ const First = styled.div`
 const Second = styled.div`
   background-color: black;
   color: white;
+  padding: 80px 0;
 `
 
 const Wrapper = styled.div`
