@@ -36,13 +36,19 @@ export default Products
 const StyledProducts = styled(Section)``
 
 const Intro = styled.div`
+  width: 40%;
 `
 
 const Wrapper = styled.div`
+  display: flex;
 `
 
 const Left = styled.div`
+  flex: 1;
+  background-color: red;
 `
 
 const Right = styled.div`
+  flex: 1;
+  background-color: blue;
 `
