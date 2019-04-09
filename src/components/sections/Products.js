@@ -38,7 +38,7 @@ const Products = () => {
         </First>
       </StyledProducts>
       <Second>
-        <StyledProducts>
+        <StyledProductsAlt>
           <Wrapper>
             <Left>
               2. An application made for local authorities. Using the same data
@@ -56,7 +56,7 @@ const Products = () => {
           <Right>
             <img src={workGuy} alt="car" />
           </Right>
-        </StyledProducts>
+        </StyledProductsAlt>
       </Second>
     </>
   )
@@ -66,6 +66,10 @@ export default Products
 
 const StyledProducts = styled(Section)`
   display: flex;
+`
+
+const StyledProductsAlt = styled(StyledProducts)`
+  flex-flow: row-reverse;
 `
 
 const First = styled.div`
