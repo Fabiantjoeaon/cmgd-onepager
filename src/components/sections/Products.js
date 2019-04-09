@@ -6,8 +6,8 @@ import Header from "../layout/Header"
 import Section from "../layout/Section"
 
 // Images
-import familyCar from "../../images/family-car.png"
-import workGuy from "../../images/work-guy.png"
+import familyCar from "../../images/car.png"
+import workGuy from "../../images/traffic-light.png"
 
 const Products = () => {
   return (
@@ -66,10 +66,14 @@ export default Products
 
 const StyledProducts = styled(Section)`
   display: flex;
+  background-color: #689187;
+  color: "#35333";
 `
 
-const StyledProductsAlt = styled(StyledProducts)`
+const StyledProductsAlt = styled(Section)`
+  display: flex;
   flex-flow: row-reverse;
+  color: "#35333";
 `
 
 const First = styled.div`
@@ -77,7 +81,7 @@ const First = styled.div`
 `
 
 const Second = styled.div`
-  background-color: black;
+  background-color: #f2f4f5;
   color: white;
   padding: 80px 0;
 `
@@ -98,6 +102,7 @@ const Intro = styled.div`
 const Left = styled.div`
   flex: 1;
   line-height: 20px;
+  color: #284f70;
 `
 
 const Right = styled.div`
@@ -106,6 +111,6 @@ const Right = styled.div`
   justify-content: center;
   align-items: center;
   img {
-    width: 350px;
+    width: 280px;
   }
 `

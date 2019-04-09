@@ -19,8 +19,8 @@ import feedback from "../../images/feedback.jpeg"
 const Journey = () => {
   return (
     <StyledJourney>
-      <Header>The Journey</Header>
       <TimelineWrapper>
+        <Header className="header">The Journey</Header>
         <Timeline lineColor="rgba(40, 79, 112, 0.15)">
           <TimelineEvent className="card" bubbleStyle={{ display: "none" }}>
             <div className="content-wrapper">
@@ -95,7 +95,7 @@ const Journey = () => {
               <img src={iteration} alt="car" className="event" />
             </div>
           </TimelineEvent>
-          <TimelineEvent className="card">
+          <TimelineEvent className="card" bubbleStyle={{ display: "none" }}>
             <h1 className="title">Killing our darlings for a new concept</h1>
             <p className="paragraph">
               Our current concept didn't quite fit with the current use of space
@@ -110,7 +110,7 @@ const Journey = () => {
             </p>
             <img src={concept} alt="concept" className="event" />
           </TimelineEvent>
-          <TimelineEvent className="card">
+          <TimelineEvent className="card" bubbleStyle={{ display: "none" }}>
             <h1 className="title">
               Pitching two new concepts and choosing one
             </h1>
@@ -140,6 +140,8 @@ export default Journey
 
 const StyledJourney = styled(Section)`
   background-color: #fdb5ad;
+  display: flex;
+  justify-content: center;
   svg {
     width: 15px;
   }
@@ -147,6 +149,7 @@ const StyledJourney = styled(Section)`
 
 const TimelineWrapper = styled.div`
   margin-top: 30px;
+  max-width: 800px;
   > * {
     color: #284f70;
   }
