@@ -93,7 +93,7 @@ const Journey = () => {
 export default Journey
 
 const StyledJourney = styled(Section)`
-  color: "red";
+  background-color: #fdb5ad;
   svg {
     width: 15px;
   }
@@ -101,6 +101,9 @@ const StyledJourney = styled(Section)`
 
 const TimelineWrapper = styled.div`
   margin-top: 30px;
+  > * {
+    color: #284f70;
+  }
   .title {
     font-size: 1.4rem;
   }

@@ -31,7 +31,8 @@ const Team = () => {
           <span>Design</span>
         </div>
         <div className="avatar__wrapper">
-          <div className="avatar vincent" />><h2>Vincent</h2>
+          <div className="avatar vincent" />
+          <h2>Vincent</h2>
           <span>Design</span>
         </div>
       </div>
@@ -48,6 +49,8 @@ const StyledTeam = styled(Section)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fdebd5;
+  color: #284f70;
 
   h1 {
     font-weight: 900;
@@ -85,16 +88,20 @@ const StyledTeam = styled(Section)`
 
       h2,
       span {
-        color: #000;
         text-align: center;
         margin: 0 auto;
         display: block;
       }
 
       h2 {
-        font-weight: 900;
         font-size: 1.2rem;
-        margin-bottom: 20px;
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+      span {
+        font-weight: 100;
+        font-size: 0.9rem;
       }
 
       .avatar {
