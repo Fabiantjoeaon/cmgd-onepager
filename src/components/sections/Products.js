@@ -14,12 +14,12 @@ const Products = () => {
     <>
       <StyledProducts>
         <First>
-          <Header>Products</Header>
-          <Intro>
-            Safe roads are the basis for a SafeCity. We use spacedata to warn,
-            inform and advise consumers as well as local authorities.
-          </Intro>
           <Wrapper>
+            <Header>Products</Header>
+            <Intro>
+              Safe roads are the basis for a SafeCity. We use spacedata to warn,
+              inform and advise consumers as well as local authorities.
+            </Intro>
             <Left>
               1. An application made for consumers. In this sense of the word,
               road users. In this concept we index Dutch roads and give them a
@@ -31,18 +31,14 @@ const Products = () => {
               trip to their destination. In the future we might have travel
               advice based on other factors like the weather.
             </Left>
-            <Right>
-              <img src={familyCar} alt="car" />
-            </Right>
           </Wrapper>
+          <Right>
+            <img src={familyCar} alt="car" />
+          </Right>
         </First>
       </StyledProducts>
       <Second>
         <StyledProducts>
-          <Intro>
-            Safe roads are the basis for a SafeCity. We use spacedata to warn,
-            inform and advise consumers as well as local authorities.
-          </Intro>
           <Wrapper>
             <Left>
               2. An application made for local authorities. Using the same data
@@ -56,10 +52,10 @@ const Products = () => {
               raise concern. This way the community has a vote and you have
               input from different sources.
             </Left>
-            <Right>
-              <img src={workGuy} alt="car" />
-            </Right>
           </Wrapper>
+          <Right>
+            <img src={workGuy} alt="car" />
+          </Right>
         </StyledProducts>
       </Second>
     </>
@@ -68,25 +64,30 @@ const Products = () => {
 
 export default Products
 
-const StyledProducts = styled(Section)``
+const StyledProducts = styled(Section)`
+  display: flex;
+`
 
-const First = styled.div``
+const First = styled.div`
+  display: flex;
+`
 
 const Second = styled.div`
   background-color: black;
   color: white;
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+`
+
 const Intro = styled.div`
-  width: 40%;
   font-size: 1.4rem;
   margin: 15px 0;
   line-height: 30px;
   font-weight: 700;
-`
-
-const Wrapper = styled.div`
-  display: flex;
 `
 
 const Left = styled.div`
