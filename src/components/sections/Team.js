@@ -5,6 +5,11 @@ import styled from "styled-components"
 import Header from "../layout/Header"
 import Section from "../layout/Section"
 
+import guido from "../../images/guido.jpg"
+import fabian from "../../images/fabian.jpeg"
+import vincent from "../../images/vincent-jackson.png"
+import jonathan from "../../images/jonathan.jpeg"
+
 const Team = () => {
   return (
     <StyledTeam>
@@ -60,6 +65,22 @@ const StyledTeam = styled(Section)`
       width: calc(100% / 2 - (var(--margin) * 2));
       height: auto;
       margin-bottom: var(--margin);
+
+      .avatar {
+        background-size: cover;
+      }
+      .guido {
+        background-image: url(${guido});
+      }
+      .fabian {
+        background-image: url(${fabian});
+      }
+      .vincent {
+        background-image: url(${vincent});
+      }
+      .jonathan {
+        background-image: url(${jonathan});
+      }
 
       h2,
       span {
