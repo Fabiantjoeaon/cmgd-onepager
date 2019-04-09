@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 // Style
 import Section from "../layout/Section"
+import bg from "../../images/bg.jpg"
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ export default Hero
 
 const StyledHero = styled(Section)`
   height: 100vh;
-  background-image: url("https://unsplash.it/2000");
+  background-image: url(${bg});
   background-size: cover;
   z-index: -1;
   background-position: center;
