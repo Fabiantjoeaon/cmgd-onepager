@@ -11,6 +11,10 @@ import ideation from "../../images/ideation.jpg"
 import concepting from "../../images/concepting.jpg"
 import pitching from "../../images/pitching.jpg"
 import iteration from "../../images/iteration.jpg"
+import concept from "../../images/concept.jpeg"
+import pres from "../../images/pres.png"
+import pres2 from "../../images/pres2.png"
+import feedback from "../../images/feedback.jpeg"
 
 const Journey = () => {
   return (
@@ -75,6 +79,33 @@ const Journey = () => {
               to drive back the injuries and deaths in certain areas?
             </p>
             <img src={iteration} alt="car" className="event" />
+          </TimelineEvent>
+          <TimelineEvent className="card">
+            <h1 className="title">Killing our darlings for a new concept</h1>
+            <p className="paragraph">
+              Our current concept didn't quite fit with the current use of space
+              data, which in the end should be the main exit point of this
+              project. For this reason we killed of our previous concept of
+              improving the liveability of neighbourhoods and came up with a
+              concept. We got inspired for this new concept by the fact that the
+              amount of deaths on the dutch roadways are linked by the amount of
+              light. We brainstormed a lot for this new subject and came up with
+              two new concepts which we can later choose from, after we've
+              presented these to CGI.
+            </p>
+            <img src={concept} alt="concept" className="event" />
+          </TimelineEvent>
+          <TimelineEvent className="card">
+            <h1 className="title">
+              Pitching two new concepts and choosing one
+            </h1>
+            <p className="paragraph">
+              We pitched our new concepts for CGI, received feedback and chose
+              one of them.
+            </p>
+            <img src={pres} alt="concept" className="event" />
+            <img src={pres2} alt="concept" className="event" />
+            <img src={feedback} alt="concept" className="event" />
           </TimelineEvent>
           <TimelineEvent className="card">
             <h1 className="title">CMGD continues the play</h1>
