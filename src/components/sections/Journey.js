@@ -15,6 +15,8 @@ import concept from "../../images/concept.jpeg"
 import pres from "../../images/pres.png"
 import pres2 from "../../images/pres2.png"
 import feedback from "../../images/feedback.jpeg"
+import ss1 from "../../images/ss1.png"
+import ss2 from "../../images/ss2.png"
 
 const Journey = () => {
   return (
@@ -127,8 +129,11 @@ const Journey = () => {
             <p className="paragraph">
               We gather feedback. The concept appears to have a better goal. We
               feel that, the people feel it. Working on a prototype and
-              delivering visuals to clarify our concept is our #1 priority.
+              delivering visuals to clarify our concept is our #1 priority. At
+              this point we're constantly building our app.
             </p>
+            <img src={ss1} alt="concept" className="event" />
+            <img src={ss2} alt="concept" className="event" />
           </TimelineEvent>
         </Timeline>
       </TimelineWrapper>
