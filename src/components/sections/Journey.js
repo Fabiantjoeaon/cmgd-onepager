@@ -147,6 +147,7 @@ const StyledJourney = styled(Section)`
   background-color: #fdb5ad;
   display: flex;
   justify-content: center;
+  padding: 90px 0;
   svg {
     width: 15px;
   }

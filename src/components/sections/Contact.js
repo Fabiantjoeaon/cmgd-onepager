@@ -8,7 +8,6 @@ import Header from "../layout/Header"
 const Contact = () => {
   return (
     <Section>
-      <Header>Contact</Header>
       <Text>
         <h3>
           We’re hard at work to improve our concepts and show you what we can

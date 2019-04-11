@@ -51,6 +51,7 @@ const StyledTeam = styled(Section)`
   flex-direction: column;
   background-color: #fdebd5;
   color: #284f70;
+  padding: 90px 0;
 
   h1 {
     font-weight: 900;

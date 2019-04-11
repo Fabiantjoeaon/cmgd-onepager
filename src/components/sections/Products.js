@@ -13,49 +13,54 @@ const Products = () => {
   return (
     <>
       <StyledProducts>
-        <First>
-          <Wrapper>
-            <Header>Products</Header>
-            <Intro>
-              Safe roads are the basis for a SafeCity. We use spacedata to warn,
-              inform and advise consumers as well as local authorities.
-            </Intro>
-            <Left>
-              1. An application made for consumers. In this sense of the word,
-              road users. In this concept we index Dutch roads and give them a
-              safety score. An example could be the difference in height, which
-              might be a puthole or wear and tear. Another index is the amount
-              of lights near the road. Road’s that aren’t well lit are often
-              seen in the same areas as traffic accidents - and even deaths. We
-              hope to make drivers aware of these roads and give them a safe
-              trip to their destination. In the future we might have travel
-              advice based on other factors like the weather.
-            </Left>
-          </Wrapper>
-          <Right>
-            <img src={familyCar} alt="car" />
-          </Right>
-        </First>
+        <Wrap>
+          <First>
+            <Wrapper>
+              <Header>Products</Header>
+              <Intro>
+                Safe roads are the basis for a SafeCity. We use spacedata to
+                warn, inform and advise consumers as well as local authorities.
+              </Intro>
+              <Left>
+                1. An application made for consumers. In this sense of the word,
+                road users. In this concept we index Dutch roads and give them a
+                safety score. An example could be the difference in height,
+                which might be a puthole or wear and tear. Another index is the
+                amount of lights near the road. Road’s that aren’t well lit are
+                often seen in the same areas as traffic accidents - and even
+                deaths. We hope to make drivers aware of these roads and give
+                them a safe trip to their destination. In the future we might
+                have travel advice based on other factors like the weather.
+              </Left>
+            </Wrapper>
+            <Right>
+              <img src={familyCar} alt="car" />
+            </Right>
+          </First>
+        </Wrap>
       </StyledProducts>
+
       <Second>
         <StyledProductsAlt>
-          <Wrapper>
-            <Left>
-              2. An application made for local authorities. Using the same data
-              but in a different way. This way the authorities can anticapate
-              problems on roads and other areas by checking the space data we
-              supply. This way we can highlight ‘problem’ areas. Which makes it
-              easier to send workers or other services to fix or prevent the
-              problems. By having an interactive map we make it easier for the
-              authorities to make decisions based on the gravity of an area. In
-              the future, drivers might be able to vote on particular areas to
-              raise concern. This way the community has a vote and you have
-              input from different sources.
-            </Left>
-          </Wrapper>
-          <Right>
-            <img src={workGuy} alt="car" />
-          </Right>
+          <Wrap className="wrap">
+            <Wrapper>
+              <Left>
+                2. An application made for local authorities. Using the same
+                data but in a different way. This way the authorities can
+                anticapate problems on roads and other areas by checking the
+                space data we supply. This way we can highlight ‘problem’ areas.
+                Which makes it easier to send workers or other services to fix
+                or prevent the problems. By having an interactive map we make it
+                easier for the authorities to make decisions based on the
+                gravity of an area. In the future, drivers might be able to vote
+                on particular areas to raise concern. This way the community has
+                a vote and you have input from different sources.
+              </Left>
+            </Wrapper>
+            <Right>
+              <img src={workGuy} alt="car" />
+            </Right>
+          </Wrap>
         </StyledProductsAlt>
       </Second>
     </>
@@ -70,10 +75,20 @@ const StyledProducts = styled(Section)`
   color: "#35333";
 `
 
+const Wrap = styled.div`
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+`
+
 const StyledProductsAlt = styled(Section)`
   display: flex;
   flex-flow: row-reverse;
   color: "#35333";
+  .wrap {
+    flex-flow: row-reverse;
+  }
 `
 
 const First = styled.div`
