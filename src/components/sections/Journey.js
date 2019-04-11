@@ -152,8 +152,6 @@ const StyledJourney = styled(Section)`
   }
 `
 
-// console
-
 const TimelineWrapper = styled.div`
   margin-top: 30px;
   max-width: 800px;
